@@ -17,10 +17,7 @@
  */
 
 const path = require('path');
-// const { defaults } = require('jest-config');
-const libsToRecompile = require('./libsToRecompile');
-const { requireProjectConfig } = require('../utils/requireConfigs');
-const projectConfig = requireProjectConfig();
+const libsToRecompile = require('./utils/libsToRecompile');
 
 module.exports = {
     collectCoverage: true,

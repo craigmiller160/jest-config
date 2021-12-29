@@ -10,7 +10,8 @@
     "build": "echo 'No build required'"
   },
   "files": [
-    "jest.config.js"
+    "jest.config.js",
+    "utils/*"
   ],
   "dependencies": {
     "identity-obj-proxy": "^3.0.0",
