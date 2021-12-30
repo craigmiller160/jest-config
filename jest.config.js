@@ -27,6 +27,6 @@ module.exports = {
         '<rootDir>/.yalc'
     ],
     transformIgnorePatterns: [
-        `^<rootDir>/node_modules/(?!${libsToRecompile.join('|')}).*$`
+        `/node_modules/(?!${libsToRecompile.join('|')})/`
     ]
 };
