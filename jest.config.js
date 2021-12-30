@@ -28,8 +28,5 @@ module.exports = {
     ],
     transformIgnorePatterns: [
         `node_modules/(?!${libsToRecompile.join('|')}).*$`
-    ],
-    transform: {
-        '^.+\\.jsx?$': path.resolve(__dirname, './jsTransformer.js') // TODO what to do here?
-    }
+    ]
 };
