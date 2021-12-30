@@ -27,9 +27,9 @@ module.exports = {
         '<rootDir>/.yalc'
     ],
     transformIgnorePatterns: [
-        `/node_modules/(?!${libsToRecompile.join('|')})/`,
+        `\/node_modules\/(?!${libsToRecompile.join('|')})\/`,
         'core-js',
-        '@babel/runtime'
+        '@babel\/runtime'
     ],
     transform: {
         '^.+\\.jsx?$': 'babel-jest'
