@@ -27,7 +27,7 @@ module.exports = {
         '<rootDir>/.yalc'
     ],
     transformIgnorePatterns: [
-        `\/node_modules\/(?!${libsToRecompile.join('|')})\/`,
+        `node_modules\/(?!${libsToRecompile})`,
         'core-js',
         '@babel\/runtime'
     ],
