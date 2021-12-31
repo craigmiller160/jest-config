@@ -25,4 +25,4 @@ module.exports = configMerge(jestConfig, moreConfig1, moreConfig2);
 
 ## How to Run
 
-Simply run the `jest` command to execute the tests using this configuration._
+The NPM command `craig-test` is provided by this library to run jest with all necessary configurations.
