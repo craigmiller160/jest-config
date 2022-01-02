@@ -2,6 +2,8 @@
 
 const spawn = require('cross-spawn');
 
-spawn.sync('cross-env', ['NODE_ENV=test', 'jest', ...process.argv.slice(2)], {
+const result = spawn.sync('cross-env', ['NODE_ENV=test', 'jest', ...process.argv.slice(2)], {
     stdio: 'inherit'
 });
+
+process.exit(result.status);
