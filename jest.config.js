@@ -2,7 +2,7 @@ const path = require('path');
 const libsToRecompile = require('./utils/libsToRecompile');
 
 module.exports = {
-    collectCoverage: true,
+    collectCoverage: false,
     collectCoverageFrom: [
         '<rootDir>/src/**/*.{js,jsx}',
         '<rootDir>/node_modules'
