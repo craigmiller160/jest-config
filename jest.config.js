@@ -1,5 +1,8 @@
 const path = require('path');
-const libsToRecompile = require('./utils/libsToRecompile');
+const {
+    libPatterns,
+    createCombinedPattern
+} = require('./utils/libsToRecompile');
 
 module.exports = {
     collectCoverage: false,
@@ -27,7 +30,7 @@ module.exports = {
         '<rootDir>/.yalc'
     ],
     transformIgnorePatterns: [
-        `node_modules\/(?!${libsToRecompile})`,
+        createCombinedPattern(libPatterns),
         'core-js',
         '@babel\/runtime'
     ],
