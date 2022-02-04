@@ -26,3 +26,26 @@ module.exports = configMerge(jestConfig, moreConfig1, moreConfig2);
 ## How to Run
 
 The NPM command `craig-test` is provided by this library to run jest with all necessary configurations.
+
+## Customizing Transform Ignore Patterns
+
+The `transformIgnorePatterns` may need to be customized or extended in some circumstances. Here is how to do this:
+
+```javascript
+const jestConfig = require('@craigmiller160/jest-config');
+const {
+    libPatterns,
+    createCombinedPattern
+} = require('@craigmiller160/jest-config/utils/libsToRecompile');
+
+module.exports = {
+	...jestConfig,
+	transformIgnorePatterns: [
+		...jestConfig.transformIgnorePatterns.slice(1),
+		createCombinedPattern([
+			...libPatterns,
+			'@antv\/xflow-core'
+		])
+	]
+};
+```
