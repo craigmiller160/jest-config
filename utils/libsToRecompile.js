@@ -1,4 +1,4 @@
-module.exports = [
+const libPatterns = [
     '@craigmiller160\/jest-matchers-common',
     '@craigmiller160\/react-test-utils',
     'fp-ts\/es6',
@@ -8,5 +8,14 @@ module.exports = [
     '@craigmiller160\/react-hook-form-material-ui',
     '@craigmiller160\/ajax-error-handler',
     '@craigmiller160\/react-material-ui-common',
-    '@craigmiller160\/ts-functions\/es'
-].join('|');
+    '@craigmiller160\/ts-functions\/es',
+    'lodash-es'
+];
+
+const createCombinedPattern = (patterns) =>
+    `node_modules\/(?!${patterns.join('|')})`;
+
+module.exports = {
+    libPatterns,
+    createCombinedPattern
+};
