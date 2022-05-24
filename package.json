@@ -1,6 +1,6 @@
 {
   "name": "@craigmiller160/jest-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "jest.config.js",
   "author": "craigmiller160",
   "bin": {
@@ -21,6 +21,6 @@
     "cross-env": "^7.0.3",
     "cross-spawn": "^7.0.3",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.4.5"
+    "jest": "^28.1.0"
   }
 }
