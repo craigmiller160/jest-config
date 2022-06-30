@@ -9,7 +9,8 @@ const libPatterns = [
     '@craigmiller160\/ajax-error-handler',
     '@craigmiller160\/react-material-ui-common',
     '@craigmiller160\/ts-functions\/es',
-    'lodash-es'
+    'lodash-es',
+    'nanoid'
 ];
 
 const createCombinedPattern = (patterns) =>
