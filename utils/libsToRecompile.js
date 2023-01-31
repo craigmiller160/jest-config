@@ -9,6 +9,7 @@ const libPatterns = [
     '@craigmiller160\/ajax-error-handler',
     '@craigmiller160\/react-material-ui-common',
     '@craigmiller160\/ts-functions\/es',
+    '@craigmiller160\/react-keycloak',
     'lodash-es',
     'nanoid'
 ];
