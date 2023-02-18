@@ -42,7 +42,9 @@ module.exports = {
             '@swc/jest',
             {
                 jsc: {
-                    syntax: 'typescript'
+                    parser: {
+                        syntax: 'typescript'
+                    }
                 }
             }
         ],
