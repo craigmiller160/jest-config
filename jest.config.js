@@ -35,6 +35,42 @@ module.exports = {
         '@babel\/runtime'
     ],
     transform: {
-        '^.+\\.jsx?$': 'babel-jest'
+        '^.+\\.js$': '@swc/jest',
+        '^.+\\.ts$': [
+            '@swc/jest',
+            {
+                jsc: {
+                    syntax: 'typescript'
+                }
+            }
+        ],
+        '^.+\\.jsx$': [
+            '@swc/jest',
+            {
+                jsc: {
+                    transform: {
+                        react: {
+                            runtime: 'automatic'
+                        }
+                    }
+                }
+            }
+        ],
+        '^.+\\.tsx$': [
+            '@swc/jest',
+            {
+                jsc: {
+                    parser: {
+                        syntax: 'typescript',
+                        tsx: true
+                    },
+                    transform: {
+                        react: {
+                            runtime: 'automatic'
+                        }
+                    }
+                }
+            }
+        ]
     }
 };
