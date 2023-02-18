@@ -25,7 +25,9 @@ module.exports = {
         '<rootDir>/src'
     ],
     testEnvironment: 'jsdom',
-    testURL: 'http://localhost',
+    testEnvironmentOptions: {
+        url: 'http://localhost'
+    },
     modulePathIgnorePatterns: [
         '<rootDir>/.yalc'
     ],
