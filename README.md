@@ -1,6 +1,6 @@
 _# jest-config
 
-A standard Jest configuration for use in JavaScript projects. It both provides all the core Jest settings, but also recompiles other libraries I've written and published so that their ESModules won't break tests.
+A standard Jest configuration for use in JavaScript and TypeScript projects. It both provides all the core Jest settings, but also recompiles other libraries I've written and published so that their ESModules won't break tests.
 
 ## How to Use
 
