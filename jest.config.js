@@ -7,7 +7,7 @@ const {
 module.exports = {
     collectCoverage: false,
     collectCoverageFrom: [
-        '<rootDir>/src/**/*.{js,jsx}',
+        '<rootDir>/src/**/*.{js,jsx,ts,tsx}',
         '<rootDir>/node_modules'
     ],
     moduleNameMapper: {
@@ -18,7 +18,7 @@ module.exports = {
         '<rootDir>/src'
     ],
     testMatch: [
-        '<rootDir>/test/**/*.{test,Spec}.{js,jsx}'
+        '<rootDir>/test/**/*.{test,Spec}.{js,jsx,ts,tsx}'
     ],
     moduleDirectories: [
         '<rootDir>/node_modules',
