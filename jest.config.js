@@ -12,7 +12,8 @@ module.exports = {
     ],
     moduleNameMapper: {
         '.+\\.(css|scss)': 'identity-obj-proxy',
-        '.+\\.png$': path.join(__dirname, 'utils', 'fileMock.js')
+        '.+\\.png$': path.join(__dirname, 'utils', 'fileMock.js'),
+        '^axios$': require.resolve('axios')
     },
     modulePaths: [
         '<rootDir>/src'
@@ -30,11 +31,6 @@ module.exports = {
     },
     modulePathIgnorePatterns: [
         '<rootDir>/.yalc'
-    ],
-    transformIgnorePatterns: [
-        createCombinedPattern(libPatterns),
-        'core-js',
-        '@babel\/runtime'
     ],
     transform: {
         '^.+\\.js$': '@swc/jest',

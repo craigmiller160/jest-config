@@ -1,5 +1,4 @@
 const libPatterns = [
-    '@craigmiller160\/jest-matchers-common',
     '@craigmiller160\/react-test-utils',
     'fp-ts\/es6',
     '@craigmiller160\/ajax-api',
@@ -15,7 +14,7 @@ const libPatterns = [
 ];
 
 const createCombinedPattern = (patterns) =>
-    `node_modules\/.*(?!${patterns.join('|')})`;
+    `node_modules\/(?!${patterns.join('|')})`;
 
 module.exports = {
     libPatterns,
