@@ -12,8 +12,7 @@ module.exports = {
     ],
     moduleNameMapper: {
         '.+\\.(css|scss)': 'identity-obj-proxy',
-        '.+\\.png$': path.join(__dirname, 'utils', 'fileMock.js'),
-        '^axios$': require.resolve('axios')
+        '.+\\.png$': path.join(__dirname, 'utils', 'fileMock.js')
     },
     modulePaths: [
         '<rootDir>/src'
