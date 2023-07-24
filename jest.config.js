@@ -22,8 +22,8 @@ module.exports = {
         '<rootDir>/test/**/*.{test,Spec}.{js,jsx,ts,tsx}'
     ],
     moduleDirectories: [
-        '<rootDir>/node_modules',
-        '<rootDir>/src'
+        'node_modules',
+        'src'
     ],
     testEnvironment: 'jsdom',
     testEnvironmentOptions: {
